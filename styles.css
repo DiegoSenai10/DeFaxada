@@ -1,0 +1,178 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Barra superior (navbar) */
+.navbar {
+    background-color: #080029;
+    height: 70px;
+    width: 100%; /* Faz a barra superior ocupar toda a largura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que a barra ficará sobreposta a outros elementos */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura da navbar */
+    overflow: hidden; /* Evita qualquer conteúdo que poderia sair da tela */
+}
+
+.navbar .title {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .user-info {
+    color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-info i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #FFFFFF;
+    color: #000000;
+    height: calc(100vh - 70px); /* Ocupa a altura da tela menos a altura da navbar */
+    width: 220px;
+    position: fixed;
+    top: 70px; /* Ajusta para que a barra lateral comece logo abaixo da navbar */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-icons a, .sidebar-sections .section-toggle a, .sidebar-footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-icons a:hover, .sidebar-sections .section-toggle a:hover, .sidebar-footer a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar-icons a i, .sidebar-sections .section-toggle a i, .sidebar-footer a i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.sidebar-sections {
+    padding-left: 20px;
+}
+
+.sidebar-footer {
+    padding-left: 20px;
+}
+
+/* Conteúdo principal */
+.main-content {
+    margin-left: 240px; /* Espaço para a barra lateral */
+  margin-top: 70px;
+    padding: 20px;
+   
+    
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+    height: calc(100vh - 70px);
+
+}
+
+/* Estilo da tabela */
+.table-section h2 {
+    font-size: 24px;
+   
+}
+
+table {
+    
+    width: 100%; /* Aumenta a largura da tabela para 90% da área disponível */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+thead {
+    background-color: #080029;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.status.active {
+    background-color: #00AF27;
+}
+
+.status.inactive {
+    background-color: #FF0505;
+}
+
+.status.processing {
+    background-color: #FFC107;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .navbar .search-bar input {
+        width: 100%;
+    }
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        left: 0;
+    }
+    .sidebar {
+        display: none;
+    }
+    table {
+        width: 100%; /* Tabela ocupa 100% da largura em telas menores */
+    }
+}

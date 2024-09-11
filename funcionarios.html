@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - Funcionários</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barra lateral -->
+  <div class="sidebar">
+    <div class="sidebar-icons">
+      <a href="#"><i class="fas fa-home"></i> Página inicial</a>
+      <a href="#"><i class="fas fa-robot"></i> Leitura de IA</a>
+      <a href="#"><i class="fas fa-calendar"></i> Calendário</a>
+      <a href="#"><i class="fas fa-inbox"></i> Caixa de Entrada</a>
+    </div>
+
+    <div class="sidebar-sections">
+      <div class="section-toggle">
+        <a href="#"><i class="fas fa-users"></i> Funcionários</a>
+      </div>
+      <div class="section-toggle">
+        <a href="#"><i class="fas fa-cogs"></i> Maquinário</a>
+      </div>
+      <div class="section-toggle">
+        <a href="#"><i class="fas fa-clock"></i> Cronograma</a>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#"><i class="fas fa-file-alt"></i> Adicione um documento</a>
+      <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <header>
+      <div class="navbar">
+        <div class="title">DEFACHADA KORSP SECURITY</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Procurar...">
+        </div>
+        <div class="user-info">
+          <i class="fas fa-user-circle"></i> Flavio Augusto
+        </div>
+      </div>
+    </header>
+
+    <section class="table-section">
+      <h2>Funcionários</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Status</th>
+            <th>Nome</th>
+            <th>Trabalho</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Data de Contratação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><span class="status active">ACTIVE</span></td>
+            <td>Esther Howard</td>
+            <td>Marketing Coordinator</td>
+            <td>Willie.Jennings@Example.Com</td>
+            <td>(308) 555-0121</td>
+            <td>1/15/12</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><span class="status inactive">INACTIVE</span></td>
+            <td>Cameron Williamson</td>
+            <td>Dog Trainer</td>
+            <td>Sara.Cruz@Example.Com</td>
+            <td>(303) 555-0105</td>
+            <td>12/4/17</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><span class="status active">ACTIVE</span></td>
+            <td>Jane Cooper</td>
+            <td>Software Engineer</td>
+            <td>jane.cooper@company.com</td>
+            <td>(202) 555-0130</td>
+            <td>4/23/18</td>
+          </tr>
+          <tr></tr>
+            <td>4</td>
+            <td><span class="status active">ACTIVE</span></td>
+            <td>Jane Cooper</td>
+            <td>Software Engineer</td>
+            <td>jane.cooper@company.com</td>
+            <td>(202) 555-0130</td>
+            <td>4/23/18</td>
+          </tr>
+          <tr>
+            <tr>
+                <td>5</td>
+                <td><span class="status active">ACTIVE</span></td>
+                <td>Jane Cooper</td>
+                <td>Software Engineer</td>
+                <td>jane.cooper@company.com</td>
+                <td>(202) 555-0130</td>
+                <td>4/23/18</td>
+              </tr>
+          </tr>
+            <td>6</td>
+            <td><span class="status active">ACTIVE</span></td>
+            <td>Jane Cooper</td>
+            <td>Software Engineer</td>
+            <td>jane.cooper@company.com</td>
+            <td>(202) 555-0130</td>
+            <td>4/23/18</td>
+          </tr>
+          <!-- Adicionar mais funcionários conforme necessário -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
