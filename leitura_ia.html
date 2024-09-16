@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - Leitura de IA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barra lateral -->
+<div class="sidebar">
+    <div class="sidebar-icons">
+      <a href="index.html"><i class="fas fa-home"></i> Página inicial</a>
+      <a href="leitura_ia.html"><i class="fas fa-robot"></i> Leitura de IA</a> <!-- Esta página -->
+      <a href="#"><i class="fas fa-calendar"></i> Calendário</a>
+      <a href="#"><i class="fas fa-inbox"></i> Caixa de Entrada</a>
+    </div>
+  
+    <div class="sidebar-sections">
+      <div class="section-toggle">
+        <a href="funcionarios.html"><i class="fas fa-users"></i> Funcionários</a> <!-- Link para Funcionários -->
+      </div>
+      <div class="section-toggle">
+        <a href="#"><i class="fas fa-cogs"></i> Maquinário</a>
+      </div>
+      <div class="section-toggle">
+        <a href="#"><i class="fas fa-clock"></i> Cronograma</a>
+      </div>
+    </div>
+  
+    <div class="sidebar-footer">
+      <a href="#"><i class="fas fa-file-alt"></i> Adicione um documento</a>
+      <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+    </div>
+  </div>  
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <header>
+      <div class="navbar">
+        <div class="title">DEFACHADA KORSP SECURITY</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Procurar...">
+        </div>
+        <div class="user-info">
+          <i class="fas fa-user-circle"></i> Flavio Augusto
+        </div>
+      </div>
+    </header>
+
+    <section class="ia-section">
+      <h2>Leitura de I.A</h2>
+      <p>Peque os dados gerados e peça para que a I.A gere uma leitura sobre eles.</p>
+
+      <div class="input-section">
+        <input type="file" id="uploadFile" accept=".csv" />
+        <button id="processFile">Processar Dados</button>
+      </div>
+
+      <div class="result-section">
+        <h3>Resultado da Leitura</h3>
+        <p id="resultText">Nenhum dado processado ainda.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
