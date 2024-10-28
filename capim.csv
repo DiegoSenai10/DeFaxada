@@ -1,0 +1,4 @@
+id,status,nome,trabalho,email,telefone,horario
+1,ativo,João Silva,Engenheiro,joao@email.com,11987654321,09:00-18:00
+2,inativo,Mariana Gomes,Desenvolvedora,mariana@email.com,11987654322,08:00-17:00
+3,ativo,Carlos Lima,Designer,carlos@email.com,11987654323,10:00-19:00
